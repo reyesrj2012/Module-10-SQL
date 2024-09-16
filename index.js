@@ -1,27 +1,26 @@
 const inquirer = require('inquirer');
-const mysql = require('mysql2');
+//const mysql = require('mysql2');
 
 // Create a MySQL connection
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'test', // replace with your MySQL root password
-    database: 'company_db'
-});
+//const db = mysql.createConnection({
+//    host: 'localhost',
+//    user: 'root',
+//    password: 'test', // replace with your MySQL root password
+//    database: 'company_db'
+//});
 
-db.connect(err => {
-    if (err) throw err;
-    console.log('Connected to the database');
-    startApp();
-});
+//db.connect(err => {
+//    if (err) throw err;
+//    console.log('Connected to the database');
+//    startApp();
+//});
 
 // Function to start the app and present menu options
-function startApp() {
     inquirer
         .prompt({
-            name: 'action',
-            type: 'list',
-            message: 'What would you like to do?',
+            type: 'list'
+            name: 'action'
+            message: 'What would you like to do?'
             choices: [
                 'View All Departments',
                 'View All Roles',
@@ -61,7 +60,6 @@ function startApp() {
                     break;
             }
         });
-}
 
 // View all departments
 function viewDepartments() {

@@ -1,8 +1,17 @@
 # Module-10-SQL
 
-07 Node.js Challenge: Professional README Generator
+Create a SQL Database 
+It will view and manage the departments, roles, and employee in my company
 
 ## Your Task
+
+You will be presented with several options: 
+Departments 
+Roles, 
+Employees. 
+
+You will have the option 
+
 
 When creating an open source project on GitHub, it’s important to have a high-quality README for the app. This should include what the app is for, how to use the app, how to install it, how to report issues, and how to make contributions&mdash;this last part increases the likelihood that other developers will contribute to the success of the project. 
 
@@ -12,8 +21,8 @@ Your task is to create a command-line application that dynamically generates a p
 
 The application will be invoked by using the following command:
 
-```bash
-node index.js
+npm install inquirer
+npm install pg 
 ```
 
 Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. Revisit the Screencastify Tutorial in the prework as a refresher on how to record video from your computer. You’ll need to submit a link to the video _and_ add it to the README of your project.
