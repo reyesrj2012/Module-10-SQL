@@ -14,19 +14,33 @@ app.use(express.json());
 
 const deletedRow = 2;
 
-//pool.query(
-//  `DELETE FROM favorite_books WHERE id = $1`,
-//  [deletedRow],
-//  (err: Error, result: QueryResult) => {
-//  if (err) {
-//    console.log(err);
-//  } else {
-//    console.log(`${result.rowCount} row(s) deleted!`);
-//  }
-//});
+pool.query(
+  // Change the table name to match your company_db schema
+  `DELETE FROM company_db WHERE id = 50000`,
+  [deletedRow],
+  (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(`${result.rowCount} row(s) deleted!`);
+    }
+  }
+);
+
+pool.query(
+//HERE YOU ARE USING QUERIES FROM DEPARTMENT, ROLES, AND EMPLOYEES CHANGE THE CODE TO MATCH THE CORRECT FUNCTION 
+  `DELETE FROM favorite_books WHERE id = 1`,
+  [deletedRow],
+  (err: Error, result: QueryResult) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(`${result.rowCount} row(s) deleted!`);
+  }
+});
 
 // Query database
-pool.query('SELECT * FROM 'company_db', (err: Error, result: QueryResult) => {
+pool.query('SELECT * FROM company_db, (err: Error, result: QueryResult) => {
   if (err) {
     console.log(err);
   } else if (result) {
