@@ -22,6 +22,16 @@ Because this application won’t be deployed, you’ll also need to provide a li
 
 
 
+## Review
+
+You are required to submit the following for review:
+
+* A walkthrough video demonstrating the functionality of the application.
+
+* Github:https://github.com/reyesrj2012/Module-10-SQL/
+* Video: https://youtu.be/rbPg2neapus 
+
+* The URL of the GitHub repository, with a unique name and a README describing the project
 
 
 
